@@ -23,23 +23,15 @@ The dataset consists of 2357 images of malignant and benign oncological diseases
 
 The data set contains the following diseases:
 
-Actinic keratosis
-
-Basal cell carcinoma
-
-Dermatofibroma
-
-Melanoma
-
-Nevus
-
-Pigmented benign keratosis
-
-Seborrheic keratosis
-
-Squamous cell carcinoma
-
-Vascular lesion
+- Actinic keratosis
+- Basal cell carcinoma
+- Dermatofibroma
+- Melanoma
+- Nevus
+- Pigmented benign keratosis
+- Seborrheic keratosis
+- Squamous cell carcinoma
+- Vascular lesion
  
 Important NOTE:
 
@@ -47,19 +39,19 @@ We are not using any pre-trained model using Transfer learning. All the model bu
 It is advised to use GPU runtime in Google Colab due to large no of epochs.
 
 ## Conclusions
-- Conclusion : Model with input train data without dropout
+### - Conclusion : Model with input train data without dropout
         1.  Accuracy:  0.91796875 and Validation Accuracy:  0.48769575357437134
         2.  The difference in accuracy between training and validation accuracy is very significant which is a sign of overfitting.
 
-- Conclusion : Model with input train data with dropout
+### - Conclusion : Model with input train data with dropout
         1.  Accuracy:  0.8404017686843872 and Validation Accuracy:  0.5212528109550476
         2.  Both training accuracy and validation accuracy has declined a little. But, the difference in accuracy between training and validation accuracy still very significant which is a sign of overfitting.
 
-- Conclusion : Model with data augmentation applied in keras sequential
+### - Conclusion : Model with data augmentation applied in keras sequential
         1.  Accuracy:  0.5452008843421936 and Validation Accuracy:  0.5145413875579834
         2.  Overfitting is handled but accuracy delined drastically below 54%.
 
-- Conclusion : Model with class imbalance rectified with Augmentor Library, also applied batch normalization
+### - Conclusion : Model with class imbalance rectified with Augmentor Library, also applied batch normalization
         1.  Accuracy:  0.8312314748764038 and Validation Accuracy:  0.7037861943244934
         2.  After balacing the dataset, we do not see any sign of overfitting or underfitting.
 
